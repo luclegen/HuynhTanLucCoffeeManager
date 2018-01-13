@@ -10,4 +10,10 @@ public class ServiceDesk {
 
     public ServiceDesk() {
     }
+
+    public ServiceDesk(String numberName, String status) {
+        this.numberName = numberName;
+        this.status = status;
+    }
+
 }
