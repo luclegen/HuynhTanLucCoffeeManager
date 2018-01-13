@@ -23,4 +23,28 @@ public class ServiceDeskAdapter {
         this.resource = resource;
         this.objects = objects;
     }
+
+    public Activity getContext() {
+        return context;
+    }
+
+    public void setContext(Activity context) {
+        this.context = context;
+    }
+
+    public int getResource() {
+        return resource;
+    }
+
+    public void setResource(int resource) {
+        this.resource = resource;
+    }
+
+    public List<ServiceDesk> getObjects() {
+        return objects;
+    }
+
+    public void setObjects(List<ServiceDesk> objects) {
+        this.objects = objects;
+    }
 }
