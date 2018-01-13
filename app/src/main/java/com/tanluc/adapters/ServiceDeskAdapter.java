@@ -18,4 +18,9 @@ public class ServiceDeskAdapter {
     public ServiceDeskAdapter() {
     }
 
+    public ServiceDeskAdapter(Activity context, int resource, List<ServiceDesk> objects) {
+        this.context = context;
+        this.resource = resource;
+        this.objects = objects;
+    }
 }
