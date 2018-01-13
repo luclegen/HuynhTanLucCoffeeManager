@@ -42,6 +42,6 @@ public class ServiceDeskAdapter extends ArrayAdapter<ServiceDesk> {
         txtNumberName.setText(serviceDesk.getNumberName());
         txtStatus.setText(serviceDesk.getStatus());
 
-        return super.getView(position, convertView, parent);
+        return row;
     }
 }
