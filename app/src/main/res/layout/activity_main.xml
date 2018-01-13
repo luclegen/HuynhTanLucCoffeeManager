@@ -47,7 +47,8 @@
             android:layout_height="wrap_content"
             android:text="Desk is empty"
             android:id="@+id/radDeskEmpty"
-            android:checked="true" />
+            android:checked="true"
+            android:textColor="#ffffff" />
     </RadioGroup>
 
 </LinearLayout>
