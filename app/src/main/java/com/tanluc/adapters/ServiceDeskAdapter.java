@@ -37,6 +37,8 @@ public class ServiceDeskAdapter extends ArrayAdapter<ServiceDesk> {
         TextView txtNumberName = (TextView) row.findViewById(R.id.txtNumberName);
         TextView txtStatus = (TextView) row.findViewById(R.id.txtStatus);
 
+        ServiceDesk serviceDesk = this.objects.get(position);
+
         return super.getView(position, convertView, parent);
     }
 }
