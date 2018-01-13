@@ -16,4 +16,19 @@ public class ServiceDesk {
         this.status = status;
     }
 
+    public String getNumberName() {
+        return numberName;
+    }
+
+    public void setNumberName(String numberName) {
+        this.numberName = numberName;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
