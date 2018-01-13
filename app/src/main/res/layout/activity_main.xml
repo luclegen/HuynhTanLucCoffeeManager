@@ -49,6 +49,23 @@
             android:id="@+id/radDeskEmpty"
             android:checked="true"
             android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radDeskAvailable"
+            android:textColor="#ffffff"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desk is cleaning up"
+            android:id="@+id/radDeskCleaning"
+            android:checked="false"
+            android:textColor="#ffffff" />
+
     </RadioGroup>
 
 </LinearLayout>
