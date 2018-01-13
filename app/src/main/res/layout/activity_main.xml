@@ -28,4 +28,12 @@
         android:textColorHint="#ffffff"
         android:singleLine="false" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select a status of the service desk just added:"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff" />
+
 </LinearLayout>
