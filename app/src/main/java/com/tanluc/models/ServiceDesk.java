@@ -7,4 +7,7 @@ public class ServiceDesk {
 
     private String numberName;
     private String status;
+
+    public ServiceDesk() {
+    }
 }
