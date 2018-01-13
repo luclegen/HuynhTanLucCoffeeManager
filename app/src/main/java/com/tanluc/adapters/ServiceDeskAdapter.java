@@ -15,5 +15,7 @@ public class ServiceDeskAdapter {
     int resource;                   //Layout for each row
     List<ServiceDesk> objects;      //Source data
 
+    public ServiceDeskAdapter() {
+    }
 
 }
