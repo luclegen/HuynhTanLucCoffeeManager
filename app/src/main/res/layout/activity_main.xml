@@ -36,4 +36,12 @@
         android:id="@+id/textView2"
         android:textColor="#ffffff" />
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radGrSelect"
+        android:orientation="vertical">
+
+    </RadioGroup>
+
 </LinearLayout>
