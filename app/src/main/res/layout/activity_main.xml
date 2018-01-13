@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtDeskNumber"
-        android:hint="01, 02, ..."
+        android:hint="01, 02, 03, ..."
         android:textColor="#ffffff"
         android:textColorHint="#ffffff"
         android:singleLine="false" />
