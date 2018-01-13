@@ -1,8 +1,8 @@
 package com.tanluc.adapters;
 
 import android.app.Activity;
-import android.content.Context;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import com.tanluc.models.ServiceDesk;
@@ -23,5 +23,10 @@ public class ServiceDeskAdapter extends ArrayAdapter<ServiceDesk> {
         this.context = context;
         this.resource = resource;
         this.objects = objects;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        return super.getView(position, convertView, parent);
     }
 }
