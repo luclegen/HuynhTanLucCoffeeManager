@@ -3,12 +3,22 @@ package com.tanluc.huynhtanluccoffeemanager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.tanluc.models.ServiceDesk;
+
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
+
+    ArrayList<ServiceDesk> listServiceDesk;
+    ArrayAdapter<ServiceDesk> adapterServiceDesk;
+    ListView lvServiceDesk;
 
     EditText txtDeskNumber;
     RadioGroup radGrSelect;
