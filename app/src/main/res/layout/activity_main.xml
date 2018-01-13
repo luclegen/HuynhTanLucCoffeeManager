@@ -66,6 +66,14 @@
             android:checked="false"
             android:textColor="#ffffff" />
 
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desk booked"
+            android:id="@+id/radDeskBooked"
+            android:checked="false"
+            android:textColor="#ffffff" />
+
     </RadioGroup>
 
 </LinearLayout>
