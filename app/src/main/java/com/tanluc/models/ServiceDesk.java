@@ -6,5 +6,5 @@ package com.tanluc.models;
 public class ServiceDesk {
 
     private String numberName;
-
+    private String status;
 }
