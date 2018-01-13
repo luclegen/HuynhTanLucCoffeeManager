@@ -62,5 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void processSaveData() {
         ServiceDesk serviceDesk = new ServiceDesk();
+
+        serviceDesk.setNumberName(txtDeskNumber.getText().toString());
     }
 }
