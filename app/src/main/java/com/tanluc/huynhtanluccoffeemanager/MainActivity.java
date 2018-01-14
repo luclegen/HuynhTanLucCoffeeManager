@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.tanluc.adapters.ServiceDeskAdapter;
 import com.tanluc.models.ServiceDesk;
@@ -83,5 +84,19 @@ public class MainActivity extends AppCompatActivity {
         listServiceDesk.add(serviceDesk);
 
         adapterServiceDesk.notifyDataSetChanged();
+
+        try {
+            ExceptionInInitializerError error = new ExceptionInInitializerError();
+            if(txtDeskNumber.getText().toString().length() > 1) {
+                Toast.makeText(MainActivity.this, "You added " + txtDeskNumber + " successful.", Toast.LENGTH_LONG);
+            } else {
+                throw error;
+            }
+        } catch (ExceptionInInitializerError error) {
+            Toast.makeText(MainActivity.this, "Error: Invalid or null name of this service desk", Toast.LENGTH_LONG);
+        }
+
+        txtDeskNumber.setText("");
+        radDeskEmpty.setChecked(true);
     }
 }
