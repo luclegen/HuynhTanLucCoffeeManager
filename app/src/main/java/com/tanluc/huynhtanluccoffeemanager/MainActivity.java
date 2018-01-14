@@ -58,6 +58,20 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rad = (RadioButton) radGrSelect.findViewById(checkedId);
 
+                switch (checkedId) {
+                    case R.id.radDeskEmpty:
+                        txtStatus = radDeskEmpty.getText().toString();
+                        break;
+                    case R.id.radDeskAvailable:
+                        txtStatus = radDeskAvailable.getText().toString();
+                        break;
+                    case R.id.radDeskCleaning:
+                        txtStatus = radDeskCleaning.getText().toString();
+                        break;
+                    case R.id.radDeskBooked:
+                        txtStatus = radDeskBooked.getText().toString();
+                        break;
+                }
             }
         });
 
