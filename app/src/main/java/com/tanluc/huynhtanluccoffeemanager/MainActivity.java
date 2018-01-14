@@ -89,5 +89,9 @@ public class MainActivity extends AppCompatActivity {
         serviceDesk.setNumberName(txtDeskNumber.getText().toString());
 
         serviceDesk.setStatus(txtStatus);
+
+        listServiceDesk.add(serviceDesk);
+
+        adapterServiceDesk.notifyDataSetChanged();
     }
 }
