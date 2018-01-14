@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radGrSelect;
     RadioButton radDeskEmpty, radDeskAvailable, radDeskCleaning,radDeskBooked;
     Button btnSaveData;
+    String txtStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton rad = (RadioButton) radGrSelect.findViewById(checkedId);
+
             }
         });
 
@@ -71,6 +73,5 @@ public class MainActivity extends AppCompatActivity {
         ServiceDesk serviceDesk = new ServiceDesk();
 
         serviceDesk.setNumberName(txtDeskNumber.getText().toString());
-
     }
 }
