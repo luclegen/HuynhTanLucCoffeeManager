@@ -10,15 +10,16 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.tanluc.adapters.ServiceDeskAdapter;
 import com.tanluc.models.ServiceDesk;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<ServiceDesk> listServiceDesk;
-    ArrayAdapter<ServiceDesk> adapterServiceDesk;
     ListView lvServiceDesk;
+    ArrayList<ServiceDesk> listServiceDesk;
+    ServiceDeskAdapter adapterServiceDesk;
 
     EditText txtDeskNumber;
     RadioGroup radGrSelect;
