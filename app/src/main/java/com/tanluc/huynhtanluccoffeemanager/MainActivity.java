@@ -68,6 +68,16 @@ public class MainActivity extends AppCompatActivity {
 
         serviceDesk.setNumberName(txtDeskNumber.getText().toString());
 
+        if (radDeskEmpty.isChecked()) {
+            txtStatus = radDeskEmpty.getText().toString();
+        } else if (radDeskAvailable.isChecked()) {
+            txtStatus = radDeskAvailable.getText().toString();
+        } else if (radDeskCleaning.isChecked()) {
+            txtStatus = radDeskCleaning.getText().toString();
+        } else if (radDeskBooked.isChecked()) {
+            txtStatus = radDeskBooked.getText().toString();
+        }
+
         serviceDesk.setStatus(txtStatus);
 
         listServiceDesk.add(serviceDesk);
