@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radGrSelect;
     RadioButton radDeskEmpty, radDeskAvailable, radDeskCleaning,radDeskBooked;
     Button btnSaveData;
-    String txtStatus;
+    String txtStatus = "No index";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
