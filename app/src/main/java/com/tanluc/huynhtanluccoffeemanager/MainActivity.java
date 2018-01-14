@@ -52,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
+        radGrSelect.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+            }
+        });
+
         btnSaveData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,5 +71,6 @@ public class MainActivity extends AppCompatActivity {
         ServiceDesk serviceDesk = new ServiceDesk();
 
         serviceDesk.setNumberName(txtDeskNumber.getText().toString());
+
     }
 }
