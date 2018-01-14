@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
     private void processSaveData() {
         ServiceDesk serviceDesk = new ServiceDesk();
 
-        serviceDesk.setNumberName(txtDeskNumber.getText().toString());
+        serviceDesk.setNumberName(txtDeskNumber.getText().toString() + " ");
 
         if (radDeskEmpty.isChecked()) {
             txtStatus = radDeskEmpty.getText().toString();
@@ -81,22 +81,19 @@ public class MainActivity extends AppCompatActivity {
 
         serviceDesk.setStatus(txtStatus);
 
-        listServiceDesk.add(serviceDesk);
-
-        adapterServiceDesk.notifyDataSetChanged();
-
         try {
             ExceptionInInitializerError error = new ExceptionInInitializerError();
-            if(txtDeskNumber.getText().toString().length() > 1) {
-                Toast.makeText(MainActivity.this, "You added " + txtDeskNumber + " successful.", Toast.LENGTH_LONG);
+            if(serviceDesk.getNumberName().length() > 0 && serviceDesk.getNumberName().charAt(0) != ' ') {
+                listServiceDesk.add(serviceDesk);
+                adapterServiceDesk.notifyDataSetChanged();
+                Toast.makeText(MainActivity.this, "You added " + serviceDesk.getNumberName() + " successful.", Toast.LENGTH_LONG).show();
             } else {
                 throw error;
             }
         } catch (ExceptionInInitializerError error) {
-            Toast.makeText(MainActivity.this, "Error: Invalid or null name of this service desk", Toast.LENGTH_LONG);
+            Toast.makeText(MainActivity.this, "Error: Invalid name or null name for this service desk", Toast.LENGTH_LONG).show();
         }
 
         txtDeskNumber.setText("");
-        radDeskEmpty.setChecked(true);
     }
 }
