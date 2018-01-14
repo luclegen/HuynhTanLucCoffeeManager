@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         lvServiceDesk = (ListView) findViewById(R.id.lvListServiceDesk);
         listServiceDesk = new ArrayList<>();
-        adapterServiceDesk = new ServiceDeskAdapter(MainActivity.this, android.R.layout.simple_list_item_1, listServiceDesk);
+        adapterServiceDesk = new ServiceDeskAdapter(MainActivity.this, R.layout.items, listServiceDesk);
         lvServiceDesk.setAdapter(adapterServiceDesk);
     }
 
