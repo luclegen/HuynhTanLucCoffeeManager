@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         radGrSelect.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-
+                RadioButton rad = (RadioButton) radGrSelect.findViewById(checkedId);
             }
         });
 
