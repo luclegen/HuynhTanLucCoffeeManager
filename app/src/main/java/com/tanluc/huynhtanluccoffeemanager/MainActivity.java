@@ -54,27 +54,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addEvents() {
-        radGrSelect.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton rad = (RadioButton) radGrSelect.findViewById(checkedId);
-
-                switch (checkedId) {
-                    case R.id.radDeskEmpty:
-                        txtStatus = radDeskEmpty.getText().toString();
-                        break;
-                    case R.id.radDeskAvailable:
-                        txtStatus = radDeskAvailable.getText().toString();
-                        break;
-                    case R.id.radDeskCleaning:
-                        txtStatus = radDeskCleaning.getText().toString();
-                        break;
-                    case R.id.radDeskBooked:
-                        txtStatus = radDeskBooked.getText().toString();
-                        break;
-                }
-            }
-        });
 
         btnSaveData.setOnClickListener(new View.OnClickListener() {
             @Override
