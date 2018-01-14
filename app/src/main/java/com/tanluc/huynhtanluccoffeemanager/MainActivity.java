@@ -37,11 +37,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addControls() {
-        listServiceDesk = new ArrayList<>();
-        adapterServiceDesk = new ArrayAdapter<ServiceDesk>(MainActivity.this, android.R.layout.simple_list_item_1, listServiceDesk);
-        lvServiceDesk = (ListView) findViewById(R.id.lvListServiceDesk);
-        lvServiceDesk.setAdapter(adapterServiceDesk);
-
         txtDeskNumber = (EditText) findViewById(R.id.txtDeskNumber);
 
         radGrSelect = (RadioGroup) findViewById(R.id.radGrSelect);
@@ -51,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         radDeskCleaning = (RadioButton) findViewById(R.id.radDeskCleaning);
         radDeskBooked = (RadioButton) findViewById(R.id.radDeskBooked);
         btnSaveData = (Button) findViewById(R.id.btnSaveData);
+
+        lvServiceDesk = (ListView) findViewById(R.id.lvListServiceDesk);
+        listServiceDesk = new ArrayList<>();
+        adapterServiceDesk = new ServiceDeskAdapter(MainActivity.this, android.R.layout.simple_list_item_1, listServiceDesk);
+        lvServiceDesk.setAdapter(adapterServiceDesk);
     }
 
     private void addEvents() {
