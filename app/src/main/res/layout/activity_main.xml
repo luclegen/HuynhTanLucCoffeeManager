@@ -53,7 +53,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New RadioButton"
+            android:text="Desk is available"
             android:id="@+id/radDeskAvailable"
             android:textColor="#ffffff"
             android:checked="false" />
